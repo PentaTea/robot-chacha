@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "removeComments": true,
+        "sourceMap": false,
+        "outDir": "out",
+        "rootDir": "./",
+        "allowJs": true,
+        "allowSyntheticDefaultImports": false,
+        "esModuleInterop": false,
+        "lib": [
+            "dom",
+            "es5",
+            "es2015.promise"
+        ],
+        "baseUrl": "./",
+        "paths": {
+            "@src/*": [
+                "src/*"
+            ],
+            "@app/*": [
+                "src/app/*"
+            ],
+            "@base/*": [
+                "src/base/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*",
+    ],
+    "exclude": [
+        "out",
+        "node_modules",
+        "dist"
+    ]
+}
