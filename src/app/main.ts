@@ -1,12 +1,12 @@
-import { App, AppConfig, startAll } from "koishi";
+import { App as APP, AppConfig, startAll } from "koishi";
 import coolq from "@base/coolq"
 
-export class APP extends coolq {
-    app: App
+export class App extends coolq {
+    app: APP
     Service: Array<any>
     constructor(option: AppConfig, Service: Array<any>) {
         super()
-        this.app = new App(option)
+        this.app = new APP(option)
         this.Service = Service;
         startAll()
         this.info("start")

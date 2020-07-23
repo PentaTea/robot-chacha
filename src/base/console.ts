@@ -1,8 +1,8 @@
 const Chalk = require('chalk');
 const DateFormat = require('dateformat');
 const randomColor = require("randomcolor");
-let NodeMonkey = require("node-monkey")
-NodeMonkey()
+// let NodeMonkey = require("node-monkey")
+// NodeMonkey()
 
 function From(from: string | null) {
     return from ? Chalk.hex(randomColor({

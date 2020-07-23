@@ -3,7 +3,7 @@ const info = require("@base/console").Info
 import { App } from "koishi";
 
 class Service {
-    constructor(name: string, cb: (app: App, options: any) => any, options: Object) {
+    constructor(name: string, cb: (app: App, options: any) => any, options: Object | null) {
         this.name = name;
         this.cb = cb;
         this.options = options;
@@ -24,6 +24,6 @@ class Service {
 
 }
 
-export function createService(name: string, options: Object): Service {
+export function createService(name: string, options?: Object | null): Service {
     return new Service(name, require("./" + name), options)
 }

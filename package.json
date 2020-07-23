@@ -6,13 +6,13 @@
     "dev": "tsc-watch --onSuccess 'node out/.'",
     "compile": "tsc && node out/.",
     "pm2": "pm2 start pm2.config.jsonc",
-    "test": "jest -i -o"
+    "test": "jest"
   },
   "license": "MIT",
   "_moduleAliases": {
-    "@src": "out/src",
-    "@app": "out/src/app",
-    "@base": "out/src/base"
+    "@src": "out/",
+    "@app": "out/app",
+    "@base": "out/base"
   },
   "devDependencies": {
     "@types/jest": "^26.0.5",

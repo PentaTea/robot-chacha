@@ -1,13 +1,12 @@
 console.log("coolq");
-require('module-alias/register')
+import 'module-alias/register'
 
-
-import { APP } from "@app/main";
+import { App } from "@app/main";
 import 'koishi-database-mysql'
-const { createService } = require("@app/service/service")
+import { createService } from "@app/service/service"
 import coolq from "@base/coolq"
 
-class main extends coolq {
+export class Main extends coolq {
     constructor() {
         super()
 
@@ -24,7 +23,7 @@ class main extends coolq {
 
         this.log("依赖注入并启动 App 服务");
 
-        const koishi = new APP({
+        const koishi = new App({
             nickname: "茶茶",
             logLevel: 3,
             type: "http",
@@ -67,7 +66,7 @@ class main extends coolq {
 }
 
 console.log("初始化 main 服务...");
-new main();
+new Main();
 
 // var nodejieba = require("nodejieba");
 

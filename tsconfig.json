@@ -6,7 +6,6 @@
         "removeComments": true,
         "sourceMap": false,
         "outDir": "out",
-        "rootDir": "./",
         "allowJs": true,
         "allowSyntheticDefaultImports": false,
         "esModuleInterop": false,
@@ -16,6 +15,7 @@
             "es2015.promise"
         ],
         "baseUrl": "./",
+        "rootDir": "src/",
         "paths": {
             "@src/*": [
                 "src/*"
@@ -34,6 +34,7 @@
     "exclude": [
         "out",
         "node_modules",
-        "dist"
+        "dist",
+        "logs"
     ]
 }
