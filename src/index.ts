@@ -19,7 +19,7 @@ export class Main extends coolq {
 
         Service.push(createService("AuthService"))
 
-        Service.push(createService("送子观音Service"))
+        //Service.push(createService("送子观音Service"))
 
         this.log("依赖注入并启动 App 服务");
 

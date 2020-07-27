@@ -1,4 +1,4 @@
-import { App, getTargetId } from "koishi";
+import { App } from "koishi";
 
 declare module 'koishi-core/dist/database' {
     interface UserData {
@@ -7,10 +7,10 @@ declare module 'koishi-core/dist/database' {
 }
 export = function (app: App, options: any) {
     var level: any = {
-        1: "1",
-        2: "2",
-        3: "3",
-        4: "THAUMIEL",
+        1: "Neturalized",
+        2: "Euclid",
+        3: "Keter",
+        4: "Apollyon",
     }
     var authority: Function = async (id: number, auth: number) => {
 

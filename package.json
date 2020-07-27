@@ -15,10 +15,10 @@
     "@base": "out/base"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.5",
-    "@types/node": "^14.0.23",
     "@types/debug": "^4.1.5",
+    "@types/jest": "^26.0.5",
     "@types/mysql": "^2.15.14",
+    "@types/node": "^14.0.23",
     "@types/ws": "^7.2.6",
     "debug": "^4.1.1",
     "jest": "^26.1.0",
@@ -27,10 +27,14 @@
     "tsc-watch": "^4.2.9"
   },
   "dependencies": {
-    "koishi": "^1.12.0",
+    "@types/express": "^4.17.7",
+    "ansi-to-html": "^0.6.14",
     "chalk": "^4.1.0",
     "dateformat": "^3.0.3",
+    "express": "^4.17.1",
+    "express-vue": "^5.15.1",
     "fixed-width-string": "^2.0.0",
+    "koishi": "^1.12.0",
     "koishi-database-mysql": "^1.2.0",
     "koishi-plugin-common": "^2.2.0",
     "module-alias": "^2.2.2",
@@ -38,6 +42,7 @@
     "node-monkey": "^1.1.0",
     "nodejieba": "^2.4.1",
     "randomcolor": "^0.5.4",
+    "tail-file": "^1.4.13",
     "typescript": "^3.9.7"
   }
 }

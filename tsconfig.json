@@ -4,7 +4,7 @@
         "noImplicitAny": true,
         "module": "commonjs",
         "removeComments": true,
-        "sourceMap": false,
+        "sourceMap": true,
         "outDir": "out",
         "allowJs": true,
         "allowSyntheticDefaultImports": false,
